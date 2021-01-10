@@ -1,8 +1,17 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Fraunces&display=swap');
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
+  font-size: large;
+  font-family: 'Cutive', serif;
+  line-height: 1.5em;
+
 }
 .slide {
   width: 100vw;
@@ -10,28 +19,10 @@ body {
   display: flex;
   align-items: center;
 }
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 400vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
+
 .vh-center {
   margin: auto auto;
   width: 80%;
-}
-
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -39,17 +30,63 @@ body {
 }
 
 .one {
-  background: #efdefe;
+  background: #e6d7b5;
+  
 }
 .two {
-  background: #a3f3d3;
+  background: #e4e6b5;
 }
 .three {
-  background: #0bbaa0;
+  background: #cde6b5;
 }
 .four {
-  background: #00dfdf;
+  background: #b5e6bd;
+}
+.five {
+  background: #b5e6d2;
+}
+.six {
+  background: #b5e1e6;
+}
+.seven {
+  background: #b5c9e6;
+}
+.eight {
+  background: #b6b5e6;
 }
 .center {
   text-align: center;
+}
+.center2{
+  text-align: center;
+  font-family:'Fraunces', serif;
+}
+
+.noanim{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20vw;
+  height:auto;
+}
+
+.pics{
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 20vw;
+height:auto;
+animation: pics 5s ease-in-out infinite;
+}
+
+@keyframes pics {
+  0% {
+    transform: scale (1.0);
+    -webkit-transform: scale(1.0);
+  }
+  50% {
+    transform: scale (1.1);
+    -webkit-transform: scale(1.1);
+  }
+
 }
