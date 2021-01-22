@@ -13,7 +13,8 @@
     <div class="outer-wrapper">
       <div class="wrapper">
         <section class="slide one">
-          <article class="vh-center">
+          <article id="element-to-animate" class="vh-center">
+            
             <img class="pics" src="images/one.png" alt="Drawing of booze and drugs">
             <p class="center">Each of us is intoxicated by different things.</p>
           </article>
@@ -63,5 +64,31 @@
       </div>
     </div>
   
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+    <script src="jquery.waypoints.min.js"></script>
+
+
+  <script>
+    $(document).ready(function(){
+ 
+    $('#element-to-animate').css('opacity', 0);
+
+    $('#element-to-animate').waypoint(function() {
+        $('#element-to-animate').addClass('pics');
+    }, { offset: '50%' });
+
+    });
+  </script>
+
+
+
+
+
+
+
   </body>
 </html>
